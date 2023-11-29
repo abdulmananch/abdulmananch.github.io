@@ -54,10 +54,10 @@ nav a:hover {
 
 /* Banner */
 header {
-    background-image: images/mananLambo.png;
+    background-image: images/mananGwagon.png;
     background-size: cover;
     background-position-y: center;
-    height: 600px;
+    height: 400px;
     border-top: 4px black solid;
     margin-top: 28px;
     margin-bottom: 30px;
