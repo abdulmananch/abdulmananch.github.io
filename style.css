@@ -164,13 +164,3 @@ footer {
     text-align: center;
     margin: 34px auto;
 }
-
-.logo-container {
-    display: inline-block;
-}
-
-/* Add styling for the logo if needed (e.g., resizing) */
-.logo-container img {
-    width: 100px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-}
