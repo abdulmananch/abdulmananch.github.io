@@ -70,7 +70,7 @@
     </div>
     <!-- Button to navigate to the second page -->
     <div class="button-container">
-      <button class="fancy-button" onclick="goToSecondPage()">Go to Second Page</button>
+      <button class="fancy-button" role="button"><span class="text">Go to Second Page</span></button>
     </div>
   </main>
 
@@ -82,6 +82,8 @@
     function goToSecondPage() {
       window.location.href = 'second-page.html';
     }
+
+    document.querySelector('.fancy-button').onclick = goToSecondPage;
   </script>
 </body>
 </html>
