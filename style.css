@@ -164,3 +164,32 @@ footer {
     text-align: center;
     margin: 34px auto;
 }
+
+/* Existing styles */
+
+.button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.fancy-button {
+  background-color: #6200ea;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fancy-button:hover {
+  background-color: #3700b3;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fancy-button:active {
+  background-color: #1a00a0;
+  transform: scale(1.05);
+}
