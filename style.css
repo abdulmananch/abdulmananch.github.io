@@ -212,3 +212,15 @@ footer {
     min-width: 196px;
   }
 }
+
+/* Additional Styles for Second Page */
+
+#youtube-section, #instagram-section, #snapchat-section {
+    background: linear-gradient(90deg, rgb(40, 40, 40), rgb(20, 20, 20));
+    border-top: black 4px solid;
+    position: sticky;
+    top: 60px;
+    height: 368px;
+    margin-top: 30px;
+    padding-top: 30px;
+}
