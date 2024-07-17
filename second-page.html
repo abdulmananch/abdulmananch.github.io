@@ -1,18 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Second Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" href="images/websiteLogo.png" type="image/png">
 </head>
 <body>
-    <h1>This is the Second Page</h1>
-    <button onclick="goBack()">Go Back</button>
-    <script>
-        function goBack() {
-            window.location.href = 'index.html';
-        }
-    </script>
+  <nav>
+    <div>
+      <a href="https://github.com/abdulmananch" target="_blank">&lt GitHub &gt</a>
+      <a href="https://www.youtube.com/abdulmananch" target="_blank">&lt YouTube &gt</a>
+      <a href="https://www.instagram.com/mr.alladen/" target="_blank">&lt Instagram &gt</a>
+      <a href="https://discord.gg/c8W9pWPAAG" target="_blank">&lt Discord &gt</a>
+    </div>
+  </nav>
+  
+  <header>
+    <h1 class="banner-name">Social Media</h1>
+    <h2 class="banner-description">Follow Me on Various Platforms</h2>
+  </header>
+  
+  <main>
+    <!-- YouTube Section -->
+    <div id="youtube-section">
+      <section class="info-left">
+        <embed src="images/youtube.gif" class="img-right"/>
+        <h2>YouTube</h2>
+        <p>Subscribe to my YouTube channel where I upload videos about technology, coding tutorials, and more!</p>
+      </section>
+    </div>
+    <!-- Instagram Section -->
+    <div id="instagram-section">
+      <section class="info-right">
+        <embed src="images/instagram.gif" class="img-left"/>
+        <h2>Instagram</h2>
+        <p>Follow me on Instagram to see my latest photos and stories from my daily life and adventures.</p>
+      </section>
+    </div>
+    <!-- Snapchat Section -->
+    <div id="snapchat-section">
+      <section class="info-left">
+        <embed src="images/snapchat.gif" class="img-right"/>
+        <h2>Snapchat</h2>
+        <p>Add me on Snapchat to see my behind-the-scenes moments and get a peek into my everyday activities.</p>
+      </section>
+    </div>
+    <!-- Navigation Buttons -->
+    <div class="button-container">
+      <button class="fancy-button" role="button" onclick="goToPage('index.html')"><span class="text">Go to First Page</span></button>
+      <button class="fancy-button" role="button" onclick="goToPage('second-page.html')"><span class="text">Go to Second Page</span></button>
+      <button class="fancy-button" role="button" onclick="goToPage('third-page.html')"><span class="text">Go to Third Page</span></button>
+    </div>
+  </main>
+
+  <footer>
+    <h4 class="credits">&copy 2024 Abdul Manan</h4>
+  </footer>
+
+  <script>
+    function goToPage(page) {
+      window.location.href = page;
+    }
+  </script>
 </body>
 </html>
