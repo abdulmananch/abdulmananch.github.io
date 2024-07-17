@@ -215,7 +215,7 @@ footer {
 
 /* Additional Styles for Second Page */
 
-#youtube-section, #instagram-section, #snapchat-section {
+#youtube-section, #instagram-section, #snapchat-section, #twitch-section {
     background: linear-gradient(90deg, rgb(40, 40, 40), rgb(20, 20, 20));
     border-top: black 4px solid;
     position: sticky;
