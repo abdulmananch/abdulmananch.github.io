@@ -68,6 +68,22 @@ header {
     justify-content: center;
 }
 
+/* Styles for the header on the second page */
+.social-media-header {
+    background-image: url('images/ytVideo.gif');
+    background-size: cover;
+    background-position-y: center;
+    height: 400px;
+    border-top: 4px black solid;
+    margin-top: 28px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 header .banner-name {
     font-size: 6.7vw;
     font-family: 'Montserrat', sans-serif;
