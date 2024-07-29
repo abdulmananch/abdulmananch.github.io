@@ -20,12 +20,12 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf');
+    src: url("fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf");
 }
 
 /* Navigation */
 nav {
-    background: linear-gradient(90deg, rgb(40, 40, 40), rgb(20, 20, 20));
+    background: linear-gradient(100deg, rgb(0, 0, 0) 23.95%, rgb(85, 0, 0));
     width: 100%;
     height: 60px;
     white-space: nowrap;
@@ -106,7 +106,7 @@ header .banner-description {
 
 /* Main Content */
 main div {
-    background: linear-gradient(90deg, rgb(40, 40, 40), rgb(20, 20, 20));
+    background: linear-gradient(100deg, rgb(85, 0, 0), rgb(0, 0, 0) 75.63%);
     border-top: black 4px solid;
     position: sticky;
     top: 60px;
@@ -143,7 +143,7 @@ embed {
 
 /* Footer */
 footer {
-    background-color: rgb(55, 55, 55);
+    background: linear-gradient(100deg, rgb(0, 0, 0) 23.95%, rgb(85, 0, 0));
     height: 88px;
     border-top: black solid 4px;
     display: flex;
@@ -190,8 +190,8 @@ footer {
 .fancy-button {
   --b: 3px;   /* border thickness */
   --s: .45em; /* size of the corner */
-  --color: #373B44;
-  
+  --color: #b40000;
+
   padding: calc(.5em + var(--s)) calc(.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
@@ -240,3 +240,54 @@ footer {
     margin-top: 30px;
     padding-top: 30px;
 }
+
+/* Navigation Bar Styles */
+nav {
+    background: linear-gradient(100deg, rgb(0, 0, 0) 23.95%, rgb(85, 0, 0));
+    width: 100%;
+    height: 60px; /* Adjusted height if needed for better fit */
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    border-top: black 4px solid;
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally */
+    align-items: center; /* Ensures vertical centering */
+}
+
+/* Global Button Styles */
+.social-button {
+    background: none;
+    border: none; /* No border around the buttons */
+    font-family: 'Courier New', Courier, monospace;
+    color: snow;
+    padding: 10px 20px; /* Sufficient padding for better visibility */
+    margin: 0 15px; /* Right and left margins for spacing between buttons */
+    border-radius: 8px; /* Rounded corners if desired */
+    font-size: 16px; /* Font size for readability */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative; /* Keep this as relative */
+}
+
+/* Raise Effect on Hover */
+.social-button:hover,
+.social-button:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover-color);
+    transform: translateY(-0.25em);
+    color: #fff;
+}
+
+/* Define CSS Variables for Colors */
+:root {
+    --github-color: #6284ff;
+    --youtube-color: #ff0000;
+    --instagram-color: #9100ff;
+    --discord-color: #00ff2f;
+    --hover-color: #fff; /* Used for the hover effect */
+}
+
+.github { --hover-color: var(--github-color); }
+.youtube { --hover-color: var(--youtube-color); }
+.instagram { --hover-color: var(--instagram-color); }
+.discord { --hover-color: var(--discord-color); }
