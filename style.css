@@ -89,6 +89,123 @@ nav a, .social-button {
 .instagram { --hover-color: var(--instagram-color); }
 .tiktok { --hover-color: var(--tiktok-color); }
 
+/* Buttons From Uiverse.io */
+.followBtn {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+.followBtn:active {
+    scale: 0.92;
+}
+
+.followBtn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+}
+
+.subBtn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.subBtn::before {
+    position: absolute;
+    content: "SUBSCRIBE";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+}
+
+.subBtn:hover {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.subBtn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.subBtn:active {
+    transform: scale(0.95);
+}
+.snapchat-link {
+    display: inline-block;
+}
+
+.snapchat-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #c8d51c;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.snapchat-btn svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.snapchat-btn:hover {
+    padding: 10px 20px;
+}
+
+.snapchat-btn:hover svg {
+    display: none;
+}
+
+.snapchat-text {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.snapchat-btn:hover .snapchat-text {
+    opacity: 1;
+}
+
 /* Banner */
 header, .social-media-header {
     background-size: cover;
